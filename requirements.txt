@@ -1,0 +1,14 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+stripe==11.4.1
+httpx==0.28.1
+pydantic==2.10.4
+pydantic-settings==2.7.1
+pyyaml==6.0.2
+sqlalchemy==2.0.36
+aiosqlite==0.20.0
+structlog==24.4.0
+tenacity==9.0.0
+pytest==8.3.4
+pytest-asyncio==0.25.0
+pytest-cov==6.0.0

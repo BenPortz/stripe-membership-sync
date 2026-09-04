@@ -1,0 +1,33 @@
+# Maps a Stripe Price ID to a PMPro membership level.
+#
+# Stripe Price IDs live in the Stripe Dashboard under Products, then Pricing.
+# PMPro Level IDs live in WordPress under Memberships > Settings > Levels.
+
+membership_map:
+  - stripe_price_id: "price_monthly_10"
+    pmpro_level_id: 1
+    level_name: "Basic"
+    duration: "month"
+
+  - stripe_price_id: "price_annual_100"
+    pmpro_level_id: 2
+    level_name: "Pro"
+    duration: "year"
+
+  - stripe_price_id: "price_lifetime_500"
+    pmpro_level_id: 3
+    level_name: "Lifetime"
+    duration: "year"
+
+# Default level if no mapping matches (e.g., new product not yet configured)
+default_level_id: 1
+
+# Whether to create WordPress users automatically if they don't exist
+auto_create_users: true
+
+# Email notifications
+notifications:
+  on_new_member: true
+  on_cancellation: true
+  on_payment_failure: true
+  admin_email: "admin@yoursite.com"
